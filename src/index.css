@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html:root{
+    --max-width: 1440px;
+    --gutter: 1rem;
+    --header-height: 60px;
+}
+
+html {
+    background-color: #F9FCFF;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
+    padding: 0 90px;
+    width: 100%;
+}
+

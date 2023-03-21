@@ -1,9 +1,10 @@
 import React from 'react';
+import './footer.css'
 
 export const Footer = () => {
 	return (
 		<footer>
-			<ul>
+			<ul className="container">
 				<li>
 					<a>Offerte per te! (Promozioni)</a>
 				</li>

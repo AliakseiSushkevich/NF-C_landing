@@ -1,11 +1,12 @@
 import React from 'react';
+import './header.css'
 
 export const Header = () => {
 	return (
 		<header>
 			<div className="container header-container">
 				<h1>
-					NF&C
+					<a href="#">NF&C</a>
 				</h1>
 				<nav>
 					<ul>

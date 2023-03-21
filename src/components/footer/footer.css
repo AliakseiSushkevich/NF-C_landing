@@ -1,0 +1,17 @@
+footer {
+    height: 112px;
+    background-color: #262628;
+}
+
+footer ul {
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

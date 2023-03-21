@@ -1,3 +1,30 @@
 #presentation img{
     width: 80%;
 }
+
+.slider__button{
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 15px);
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.slider__button img{
+}
+
+.slider__button.left{
+    left: 15px;
+}
+
+.slider__button.left img{
+    transform: rotate(180deg);
+}
+
+.slider__button.right{
+    right: 15px;
+}

@@ -11,6 +11,7 @@ header {
     top: 0;
     left: 0;
     height: var(--header-height);
+    z-index: 9999;
 }
 
 header ul {
@@ -31,6 +32,7 @@ header h1 a{
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
+    text-decoration: none !important;
 }
 
 header a:hover {

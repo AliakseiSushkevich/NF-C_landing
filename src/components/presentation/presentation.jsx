@@ -11,10 +11,10 @@ export const Presentation = () => {
 
 	return (
 		<section id="presentation" className="section_wrapper">
-			<h3>
+			<h3 className="font_xl">
 				Presentazione SOPHìA
 			</h3>
-			<div>
+			<div className="font_l">
 			<Carousel
 				showStatus={false}
 				showIndicators={false}

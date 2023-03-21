@@ -3,10 +3,10 @@ import React from 'react';
 export const About = () => {
 	return (
 		<section id="about" className="section_wrapper">
-			<h3>
+			<h3 className="font_xl">
 				Chi siamo
 			</h3>
-			<div>
+			<div className="font_l">
 				<p>
 					Siamo un gruppo di professionisti che hanno a cuore lo studente. Abbiamo sviluppato Sophìa
 					con l'intento di mettere al centro lo studente con le sue esigenze di studio e le sue

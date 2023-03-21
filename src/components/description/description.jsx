@@ -4,11 +4,11 @@ import './description.css'
 export const Description = () => {
 	return (
 		<section id="#description" className="section_wrapper description">
-			<h3>
+			<h3 className="font_xl">
 				Description
 			</h3>
-			<div>
-				<p className="p">
+			<div className="font_l">
+				<p>
 					Finalmente un prodotto a completa disposizione per le esigenze degli studenti!
 					NF&C, start up a forte connotazione innovativa, ha sviluppato una piattaforma software
 					dotata di Intelligenza Artificiale che consente a tutti gli studenti di avere un tutor

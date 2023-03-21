@@ -23,16 +23,12 @@ header ul {
 header a, header a:visited {
     color: black;
     text-decoration: none;
-    font-size: 18px;
     font-weight: 600;
-    line-height: 21px;
 }
 
 header h1 a{
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 48px;
     text-decoration: none !important;
+    font-weight: 700;
 }
 
 header a:hover {

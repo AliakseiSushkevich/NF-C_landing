@@ -21,6 +21,31 @@ li {
     list-style: none;
 }
 
+.font_xxl{
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.font_xl{
+    font-size: 40px;
+    line-height: 43px;
+}
+
+.font_l{
+    font-size: 25px;
+    line-height: 34px;
+}
+
+.font_m{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.font_s{
+
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -31,15 +56,10 @@ li {
 
 .section_wrapper{
     margin: 50px 0;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 34px;
 }
 
 .section_wrapper h3{
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 43px;
     margin-bottom: 27px;
+    font-weight: 700;
 }
 

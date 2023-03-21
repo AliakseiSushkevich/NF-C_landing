@@ -6,10 +6,10 @@ export const Header = () => {
 		<header>
 			<div className="container header-container">
 				<h1>
-					<a href="#">NF&C</a>
+					<a href="#" className="font_xxl">NF&C</a>
 				</h1>
 				<nav>
-					<ul>
+					<ul className="font_m">
 						<li>
 							<a href="#about">Chi siamo</a>
 						</li>

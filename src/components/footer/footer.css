@@ -9,6 +9,7 @@ footer ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: 600;
 }
 
 footer a {

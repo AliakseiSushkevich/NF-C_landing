@@ -4,7 +4,7 @@ import './footer.css'
 export const Footer = () => {
 	return (
 		<footer>
-			<ul className="container">
+			<ul className="container font_m">
 				<li>
 					<a>Offerte per te! (Promozioni)</a>
 				</li>

@@ -7,3 +7,11 @@
     flex-direction: column;
     gap: 1.5rem;
 }
+
+.description span{
+    font-weight: 700;
+}
+
+.description ul li{
+    list-style: '- ' none inside;
+}

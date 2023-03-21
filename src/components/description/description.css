@@ -1,3 +1,9 @@
-.description{
+.description p{
+    margin-bottom: 1.5rem;
+}
 
+.description ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }

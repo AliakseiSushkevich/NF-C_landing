@@ -7,7 +7,7 @@ import './presentation.css'
 export const Presentation = () => {
 
 	return (
-		<section id="presentation">
+		<section id="presentation" className="section_wrapper">
 			<h3>
 				Presentazione SOPHìA
 			</h3>

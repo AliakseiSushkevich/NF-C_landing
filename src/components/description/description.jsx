@@ -3,19 +3,19 @@ import './description.css'
 
 export const Description = () => {
 	return (
-		<section id="#description">
+		<section id="#description" className="section_wrapper description">
 			<h3>
 				Description
 			</h3>
 			<div>
-				<p>
+				<p className="p">
 					Finalmente un prodotto a completa disposizione per le esigenze degli studenti!
 					NF&C, start up a forte connotazione innovativa, ha sviluppato una piattaforma software
 					dotata di Intelligenza Artificiale che consente a tutti gli studenti di avere un tutor
 					virtuale che lo accompagna durante il suo percorso di studi.
 				</p>
 				<ul>
-					Ecco cosa può fare Sophìa per te:
+					<span>Ecco cosa può fare Sophìa per te:</span>
 					<li>
 						- acquisisce informazioni sul tuo stile cognitivo e sulle tue abitudini “formative” e ti
 						aiuta a pianificare meglio le attività di studio, dalla lettura alle attività di ripasso

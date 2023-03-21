@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Blog = () => {
 	return (
-		<section id="blog">
+		<section id="blog" className="section_wrapper">
 			<h3>
 				Il nostro BLOG
 			</h3>

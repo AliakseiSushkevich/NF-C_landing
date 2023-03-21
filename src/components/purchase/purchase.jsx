@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Purchase = () => {
 	return (
-		<section id="purchase">
+		<section id="purchase" className="section_wrapper">
 			<h3>
 				Acquisto
 			</h3>

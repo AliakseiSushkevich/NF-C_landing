@@ -7,12 +7,18 @@
 
 html:root{
     --max-width: 1440px;
-    --header-height: 95px;
+    --header-height: 116px;
     --white-smoke: #F9FCFF;
     --white: #FFFFFF;
     --pastel-green: #E1F0EE;
     --dark-grey: #262628;
     --black-translucent: rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 880px){
+    html:root{
+        --header-height: 77px;
+    }
 }
 
 @media screen and (max-width: 580px){

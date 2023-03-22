@@ -43,7 +43,7 @@ export const Header = () => {
 						)
 						: (
 							<nav>
-								<ul className="font_m">
+								<ul className="font_l">
 									<li>
 										<a href="#about">Chi siamo</a>
 									</li>

@@ -4,9 +4,6 @@ import './description.css'
 export const Description = () => {
 	return (
 		<section id="description" className="section_wrapper">
-			<h3 className="font_xl">
-				Description
-			</h3>
 			<div className="font_l">
 				<p>
 					Finalmente un prodotto a completa disposizione per le esigenze degli studenti!

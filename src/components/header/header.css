@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: #E1F0EE;
+    background-color: var(--pastel-green);
     position: sticky;
     top: 0;
     left: 0;
@@ -40,14 +40,17 @@ header a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 15px;
+    right: 35px;
     width: 35px;
     height: 35px;
     padding: 0;
-    border: 0;
-    outline: 0;
     z-index: 1001;
-    background-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+    .menu_btn{
+        right: 15px;
+    }
 }
 
 .menu_btn.open img{
@@ -57,7 +60,7 @@ header a:hover {
 .menu_overlay{
     position: fixed;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--black-translucent);
     top: 0;
     left: 0;
     right: 0;
@@ -68,10 +71,10 @@ header a:hover {
 
 .menu_overlay nav ul{
     flex-direction: column;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 .menu_overlay ul li a{
     font-size: 20px;
-    color: white;
+    color: var(--white);
 }

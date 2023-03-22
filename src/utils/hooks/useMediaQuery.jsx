@@ -19,10 +19,8 @@ function useMediaQuery(query) {
 	useEffect(() => {
 		const matchMedia = window.matchMedia(query)
 
-		// Triggered at the first client-side load and if query changes
 		handleChange()
 
-		// Listen matchMedia
 		if (matchMedia.addListener) {
 			matchMedia.addListener(handleChange)
 		} else {
@@ -36,7 +34,6 @@ function useMediaQuery(query) {
 				matchMedia.removeEventListener('change', handleChange)
 			}
 		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [query])
 
 	return matches

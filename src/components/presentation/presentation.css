@@ -14,10 +14,6 @@
     top: calc(50% - 15px);
     width: 35px;
     height: 35px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    background-color: transparent;
 }
 
 @media screen and (max-width: 880px){

@@ -31,7 +31,7 @@ export const Presentation = () => {
 							title={label}
 							className="slider__button left"
 						>
-							<img src={arrow} alt="arrow" />
+							<img src={arrow} alt="freccia" />
 						</button>
 					)
 				}
@@ -43,7 +43,7 @@ export const Presentation = () => {
 							title={label}
 							className="slider__button right"
 						>
-							<img src={arrow} alt="arrow" />
+							<img src={arrow} alt="freccia" />
 						</button>
 					)
 				}

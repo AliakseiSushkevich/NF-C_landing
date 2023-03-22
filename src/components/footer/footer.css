@@ -1,11 +1,11 @@
 footer {
-    background-color: #262628;
+    background-color: var(--dark-grey);
 }
 
 footer ul {
     min-height: 112px;
     height: 100%;
-    color: white;
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +28,6 @@ footer ul {
 }
 
 footer a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }

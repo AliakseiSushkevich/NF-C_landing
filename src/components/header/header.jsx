@@ -28,8 +28,15 @@ export const Header = () => {
 					isMobile
 						? (
 							<>
-								<button className={isOpen ? 'menu_btn open' : 'menu_btn'} type="button" onClick={handleMenuClick}>
-									<img src={isOpen ? close : menu} alt={isOpen ? 'close menu' : 'open menu'} />
+								<button
+									type="button"
+									className={isOpen ? 'menu_btn open' : 'menu_btn'}
+									onClick={handleMenuClick}
+								>
+									<img
+										src={isOpen ? close : menu}
+										alt={isOpen ? 'chiudere il menu' : 'aprire il menu'}
+									/>
 								</button>
 								{isOpen && <MenuOverlay handleMenuClick={handleMenuClick} />}
 							</>
@@ -67,19 +74,29 @@ const MenuOverlay = ({ handleMenuClick }) => {
 			<nav>
 				<ul>
 					<li>
-						<a onClick={() => handleMenuClick()} href="#about">Chi siamo</a>
+						<a onClick={handleMenuClick} href="#about">
+							Chi siamo
+						</a>
 					</li>
 					<li>
-						<a onClick={() => handleMenuClick()} href="#contact">Contattaci</a>
+						<a onClick={handleMenuClick} href="#contact">
+							Contattaci
+						</a>
 					</li>
 					<li>
-						<a onClick={() => handleMenuClick()} href="#presentation">Presentazione SOPHìA</a>
+						<a onClick={handleMenuClick} href="#presentation">
+							Presentazione SOPHìA
+						</a>
 					</li>
 					<li>
-						<a onClick={() => handleMenuClick()} href="#blog">Il nostro BLOG</a>
+						<a onClick={handleMenuClick} href="#blog">
+							Il nostro BLOG
+						</a>
 					</li>
 					<li>
-						<a onClick={() => handleMenuClick()} href="#purchase">Acquisto</a>
+						<a onClick={handleMenuClick} href="#purchase">
+							Acquisto
+						</a>
 					</li>
 				</ul>
 			</nav>

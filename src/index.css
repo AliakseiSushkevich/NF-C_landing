@@ -156,3 +156,6 @@ li {
     }
 }
 
+body.blocked{
+    overflow: hidden;
+}

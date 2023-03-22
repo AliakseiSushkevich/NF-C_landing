@@ -1,14 +1,21 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './header.css'
 import useMediaQuery from '../../utils/hooks/useMediaQuery.jsx';
+import close from '../../assets/icons/close.svg'
+import menu from '../../assets/icons/menu.svg'
 
 export const Header = () => {
 	const isMobile = useMediaQuery('(max-width: 880px)')
 
 	const [isOpen, setIsOpen] = useState(false)
 
-	function handleMenuClick() {
+	useEffect(() => {
+		const body = document.getElementsByTagName('body')[0]
+		body.className = isOpen ? 'blocked' : ''
+	}, [isOpen])
 
+	function handleMenuClick() {
+		setIsOpen(prevState => !prevState)
 	}
 
 	return (
@@ -20,9 +27,12 @@ export const Header = () => {
 				{
 					isMobile
 						? (
-							<div>
-								<button type="button" onClick={handleMenuClick} />
-							</div>
+							<>
+								<button className={isOpen ? 'menu_btn open' : 'menu_btn'} type="button" onClick={handleMenuClick}>
+									<img src={isOpen ? close : menu} alt={isOpen ? 'close menu' : 'open menu'} />
+								</button>
+								{isOpen && <MenuOverlay handleMenuClick={handleMenuClick} />}
+							</>
 						)
 						: (
 							<nav>
@@ -51,25 +61,25 @@ export const Header = () => {
 	)
 }
 
-const MenuOverlay = () => {
+const MenuOverlay = ({ handleMenuClick }) => {
 	return (
 		<div className="menu_overlay">
 			<nav>
-				<ul className="font_m">
+				<ul>
 					<li>
-						<a href="#about">Chi siamo</a>
+						<a onClick={() => handleMenuClick()} href="#about">Chi siamo</a>
 					</li>
 					<li>
-						<a href="#contact">Contattaci</a>
+						<a onClick={() => handleMenuClick()} href="#contact">Contattaci</a>
 					</li>
 					<li>
-						<a href="#presentation">Presentazione SOPHìA</a>
+						<a onClick={() => handleMenuClick()} href="#presentation">Presentazione SOPHìA</a>
 					</li>
 					<li>
-						<a href="#blog">Il nostro BLOG</a>
+						<a onClick={() => handleMenuClick()} href="#blog">Il nostro BLOG</a>
 					</li>
 					<li>
-						<a href="#purchase">Acquisto</a>
+						<a onClick={() => handleMenuClick()} href="#purchase">Acquisto</a>
 					</li>
 				</ul>
 			</nav>

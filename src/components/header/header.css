@@ -58,15 +58,31 @@ header a:hover {
 }
 
 .menu_overlay{
-    position: fixed;
-    z-index: 1000;
-    background-color: var(--black-translucent);
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    background-color: transparent;
     top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
+    right: 0;
+    left: 0;
     height: 100vh;
     overflow: hidden;
+    transition: background-color 0.2s ease;
+}
+
+.menu_overlay ul{
+    visibility: hidden;
+}
+
+.menu_overlay.open{
+    background-color: var(--black-translucent);
+    pointer-events: all;
+    z-index: 1000;
+}
+
+.menu_overlay.open ul{
+    visibility: visible;
 }
 
 .menu_overlay nav ul{

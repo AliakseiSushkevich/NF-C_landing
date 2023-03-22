@@ -38,7 +38,7 @@ export const Header = () => {
 										alt={isOpen ? 'chiudere il menu' : 'aprire il menu'}
 									/>
 								</button>
-								{isOpen && <MenuOverlay handleMenuClick={handleMenuClick} />}
+								<MenuOverlay handleMenuClick={handleMenuClick} isOpen={isOpen} />
 							</>
 						)
 						: (
@@ -68,9 +68,9 @@ export const Header = () => {
 	)
 }
 
-const MenuOverlay = ({ handleMenuClick }) => {
+const MenuOverlay = ({ handleMenuClick, isOpen }) => {
 	return (
-		<div className="menu_overlay">
+		<div className={isOpen ? 'menu_overlay open' : 'menu_overlay'}>
 			<nav>
 				<ul>
 					<li>

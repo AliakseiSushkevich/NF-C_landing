@@ -15,10 +15,17 @@ footer ul {
 @media screen and (max-width: 900px) {
     footer ul{
         flex-wrap: wrap;
+        min-height: 100%;
+        gap: 10px;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    footer ul li {
+        margin-right: 15px;
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 593px) {
     footer ul{
         flex-wrap: wrap;
         flex-direction: column;

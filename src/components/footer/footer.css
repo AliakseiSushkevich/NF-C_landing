@@ -1,15 +1,30 @@
 footer {
-    height: 112px;
     background-color: #262628;
 }
 
 footer ul {
+    min-height: 112px;
     height: 100%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+    footer ul{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    footer ul{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px !important;
+    }
 }
 
 footer a {

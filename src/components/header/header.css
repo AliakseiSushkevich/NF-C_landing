@@ -11,13 +11,13 @@ header {
     top: 0;
     left: 0;
     height: var(--header-height);
-    z-index: 9999;
+    z-index: 9998;
 }
 
 header ul {
     display: flex;
     align-items: center;
-    gap: var(--gutter);
+    gap: 1rem;
 }
 
 header a, header a:visited {
@@ -33,4 +33,16 @@ header h1 a{
 
 header a:hover {
     text-decoration: underline;
+}
+
+.menu_overlay{
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow: hidden;
 }

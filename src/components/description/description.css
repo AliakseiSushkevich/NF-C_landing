@@ -1,17 +1,27 @@
-.description p{
+#description p{
     margin-bottom: 1.5rem;
 }
 
-.description ul{
+#description ul{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.description span{
+#description span{
     font-weight: 700;
 }
 
-.description ul li{
+#description ul li{
     list-style: '- ' none inside;
+}
+
+@media screen and (max-width: 580px){
+    #description p{
+        margin-bottom: 0.75rem;
+    }
+
+    #description ul{
+        gap: 0.75rem;
+    }
 }

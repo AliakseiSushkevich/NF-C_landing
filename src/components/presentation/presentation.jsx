@@ -6,8 +6,10 @@ import arrow from '../../assets/icons/arrow.svg'
 import './presentation.css'
 import {Carousel} from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import useMediaQuery from '../../utils/hooks/useMediaQuery.jsx';
 
 export const Presentation = () => {
+	const isMobile = useMediaQuery('(max-width: 580px)')
 
 	return (
 		<section id="presentation" className="section_wrapper">
@@ -17,11 +19,12 @@ export const Presentation = () => {
 			<div className="font_l">
 			<Carousel
 				showStatus={false}
-				showIndicators={false}
+				showIndicators={isMobile}
+				emulateTouch={isMobile}
 				showThumbs={false}
 				infiniteLoop={true}
 				renderArrowPrev={(onClickHandler, hasPrev, label) =>
-					hasPrev && (
+					!isMobile && hasPrev && (
 						<button
 							type="button"
 							onClick={onClickHandler}
@@ -33,7 +36,7 @@ export const Presentation = () => {
 					)
 				}
 				renderArrowNext={(onClickHandler, hasNext, label) =>
-					hasNext && (
+					!isMobile && hasNext && (
 						<button
 							type="button"
 							onClick={onClickHandler}

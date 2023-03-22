@@ -1,5 +1,11 @@
 #presentation img{
-    width: 80%;
+    width: 90%;
+}
+
+@media screen and (max-width: 580px){
+    #presentation img{
+        width: 100%;
+    }
 }
 
 .slider__button{
@@ -14,7 +20,11 @@
     background-color: transparent;
 }
 
-.slider__button img{
+@media screen and (max-width: 880px){
+    .slider__button{
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .slider__button.left{

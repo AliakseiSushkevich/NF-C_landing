@@ -3,7 +3,7 @@ import './description.css'
 
 export const Description = () => {
 	return (
-		<section id="#description" className="section_wrapper description">
+		<section id="description" className="section_wrapper">
 			<h3 className="font_xl">
 				Description
 			</h3>

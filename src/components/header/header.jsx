@@ -33,10 +33,18 @@ export const Header = () => {
 									className={isOpen ? 'menu_btn open' : 'menu_btn'}
 									onClick={handleMenuClick}
 								>
-									<img
-										src={isOpen ? close : menu}
-										alt={isOpen ? 'chiudere il menu' : 'aprire il menu'}
-									/>
+									{
+										isOpen
+										? <img
+											src={close}
+											alt="chiudere il menu"
+										/>
+										: <img
+											src={menu}
+											alt="chiudere il menu"
+										/>
+									}
+
 								</button>
 								<MenuOverlay handleMenuClick={handleMenuClick} isOpen={isOpen} />
 							</>
